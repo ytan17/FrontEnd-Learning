@@ -1,0 +1,36 @@
+<!-- Task1: Consider you want to accept a 10 digit number from a user. Use exception handling in a way that the number entered by the user is exactly 10 digits or throw your own exception.
+
+Task2: Use regular expression to replace apple by some other fruit of your choice var message ="I like apple"; -->
+
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	//Task1
+	var nums = "1234567890"; //can get the length of string, not only the length of Array.
+	var numArr = [1,2,3,4,5,6,7,8,9,0];
+	var numArr2 = [1,2,3,4,5,6,7,8,9,10,11];
+	try{
+		if(numArr2.length == 10){
+			document.write("You entered: " + numArr2.toString() + "<br>");
+		}else{
+			throw("Only accept a 10 digit number entering.");
+		}
+	}catch(e){
+		alert("Error: " + e);
+	}finally{
+		document.write("Thank you for your entering!" + "<br>");
+	}
+
+	//Task2
+	var fruit = /apple/i;  //string that need to search.
+	var msg = "I like apple.";
+	var msg2 = msg.replace(fruit,"orange");
+	document.write(msg2);
+</script>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

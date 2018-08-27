@@ -1,0 +1,62 @@
+<!-- Task 1: Use a for loop to display digits from 1 to 100.
+
+Task 2: Use a while loop to display square of numbers from 1 to 20. 
+
+Taks 3: Coding challenge part 10: Design a rating comments system which would post a comment depending on the rating , use switch case for doing so.-->
+
+<!DOCTYPE html>
+<script type="text/javascript">
+	//Task1
+	for(counter = 1; counter <=100; counter++){
+		if(counter == 100){
+			document.write(counter);
+		}
+		else{
+			document.write(counter + ", ");
+		}
+	}
+	document.write("<br>");
+	document.write("<br>");
+
+	//Task2
+	var counter = 1;
+	while(counter <= 20){
+		squareNum = Math.pow(counter,2);
+		if(counter == 20){
+			document.write(squareNum + "<br>");
+		}
+		else{
+			document.write(squareNum + ", ");
+		}
+		counter++;
+	}
+	document.write("<br>");
+
+	//Task3
+	var rate = 5;
+	switch(rate){
+		case 5:
+			document.write("Excellent!");
+			break;
+		case 4:
+			document.write("Good!");
+			break;
+		case 3:
+			document.write("Average.");
+			break;
+		case 3:
+			document.write("Poor.");
+			break;
+		default:
+			document.write("No comment.");
+	}
+</script>
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

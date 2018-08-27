@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		// --------------------------------JavaScript Basics-------------------------------//
+		// print Hello World
+		document.write("Hello World!!");
+
+		// pop up window
+		window.alert("Welcome!");
+
+		// print msg in console
+		console.log("Can you see this message?");
+
+		// var is mutable
+		var num = 3;
+		// let is immutable
+		let number = 100;
+
+		// case sensitive in Javascript
+		// data type - do not need to specify
+		var name = "John";
+		var id = 123;
+
+		// create new line
+		// use /n as document.write("\n") in Javascript
+		// but if this is rendering to HTML, you need to use the HTML tage for a newline:
+		document.write("<br>");
+
+		// --------------------------------Function-------------------------------------//
+
+		// create function
+		function display(){
+			document.write("Hello again <br>");
+		}
+		// call the function inside script section
+		display();
+
+		// create Object in JavaScript
+		// all JavaScript values, except primitives, are objects.
+		// Objects are variables containing variables
+		var personObject = "John Doe";
+		var personObj = {firstName : "John", lastName : "Doe", age : 50}
+		document.write(personObject + " ");
+		document.write(personObj.age + "<br>");
+
+		//global variable
+		var num = 100;
+		function numDisplay(){
+			// local variable
+			var num = 50;
+			document.write("local variable: " + num + "<br>");
+		}
+		numDisplay();
+		document.write("global variable: " + num + "<br>");
+
+		// back to previous page
+		function goBack(){
+			window.history.back();
+		}
+
+		// event handler, onclick event
+		function msgDisplay(){
+			document.write("Button Clicked.");
+		}
+
+		// --------------------------Strings,Numbers & Arrays------------------------------//
+
+		// print message: We are the "player"(use \"..\") of the century
+		document.write("We are the \"player\" of the century <br>");
+		// length of string
+		var str = "Hello World! Hello again."
+		document.write("Length of " + str + ": " + str.length + "<br>");
+
+		// find index of particular string - will show the first matched string's first character index
+		var findIdx = str.indexOf("Hello");
+		var findIndex = str.search("Hello");
+		document.write("Index of \"Hello\" in " + str + " : " + findIdx + "<br>");
+		document.write("Index of \"Hello\" in " + str + " : " + findIndex + "<br>");
+
+		// find the str with a particular index //
+
+		//slice - begin,required. End, Optional. End, not counted. Use negative numbers to select from the end of str.
+		var findStr = str.slice(6,12);
+		//substring's parameters are reversable, as it will always use its smallest parameter value as the start index and largest value as the stop index. substring will treat a negative start index as 0.
+		var findS = str.substring(6,12);
+		var findS2 = str.substring(12,6);
+		//substr can give inconsistent results. Modern browers allow using a negative start index to indicate the number of characters from the end of the string, but IE8 and lower treat a negative start index as 0.
+		var findString = str.substr(6,12);
+		var findString2 = str.substr(12,6);
+		// show as an empty string
+		var findStr2 = str.slice(12,6);
+		var findStr3 = str.slice(-6,-12);  // need to be str.slice(-12,-6);
+		var findStr4 = str.slice(6,6);
+		document.write(str + " with index 6-12[slice(6,12)]: " + findStr + "<br>");
+		document.write(str + " with index 6-12[substring(6,12)]: " + findS + "<br>");
+		document.write(str + " with index 6-12[substring(12,6)]: " + findS2 + "<br>");
+		document.write(str + " with index 6-12[substr(6,12)]: " + findString + "<br>");
+		document.write(str + " with index 6-12[substr(12,6)]: " + findString2 + "<br>");
+		document.write(str + " with index 6-12: " + findStr2 + "<br>");
+
+		// replace the string - only with replace the first matched word.
+		var replaceStr = str.replace("Hello","Hi");
+		document.write("Original: " + str + " --> Changed: " + replaceStr + "<br>");
+
+		// upper case and lower case
+		var upperStr = str.toUpperCase();
+		var lowerStr = str.toLowerCase();
+		document.write(upperStr + "<br>" + lowerStr + "<br>");
+
+		// convert to string
+		var floatNum = 22/7;
+		document.write(floatNum.toString() + "<br>");
+		// keep only two decimals
+		document.write(floatNum.toFixed(2) + "<br>");
+
+		// convert string to integer
+		var num1 = "100";
+		var num2 = 200;
+		var numTot = num1 + num2;
+		document.write("\"" + num1 + "\"" + " + " + num2 + " = " + numTot + "<br>")
+		numTot = parseInt(num1) + num2;
+		document.write(num1 + " + " + num2 + " = " + numTot + "<br>");
+
+		// math class
+		//round the number
+		document.write("round(3.789): " + Math.round(3.789) + "<br>");
+		document.write("ceil(3.3): " + Math.ceil(3.3) + "<br>");
+		document.write("ceil(3.7): " + Math.ceil(3.7) + "<br>");
+		document.write("floor(3.3): " + Math.floor(3.3) + "<br>");
+		document.write("floor(3.7): " + Math.floor(3.7) + "<br>");
+		//squart root of number
+		document.write("pow(4,0.5): " + Math.pow(4,0.5) + "<br>");
+		document.write("sqrt(4): " + Math.sqrt(4) + "<br>");
+		//absolute value
+		document.write("abs(-3): " + Math.abs(-3) + "<br>");
+
+		// create an array
+		var names = ["Ann", "Anna", "Anne"];
+		document.write(names[2] + "<br>");
+		// add a name at the end of array
+		names.push("Annie");
+		document.write(names[3] + "<br>");
+
+		// convert entire array into a string
+		document.write(names.toString() + "<br>");
+		// pop out the last element in array
+		document.write(names.pop() + "<br>");
+		document.write("After pop: " + names.toString() + "<br>");
+		// shift - pop out the first element
+		document.write(names.shift() + "<br>");		
+		document.write("After first shift: " + names.toString() + "<br>")
+		document.write(names.shift() + "<br>");
+		document.write("After second shift: " + names.toString() + "<br>")
+		// unshift - add a name at the beginning of array
+		names.unshift("Bob");
+		names.unshift("Bom");
+		document.write("After unshift(\"Bob\") & unshift(\"Bom\"): " + names.toString() + "<br>");
+		// delete particular item
+		delete names[1];
+		document.write("After delete Bom: " + names.toString() + "<br>");
+		// join two arrays
+		var animals = ["cat", "dog", "mice"];
+		var newArray = names.concat(animals);
+		document.write("After join two arrays: " + newArray.toString() + "<br>");
+
+	</script>
+		
+</head>
+
+<body>
+	<!-- event handler, call the JavaScript function -->
+	<button onclick="msgDisplay()">Click Here</button>
+	<!-- need to put this on the Button Clicked page -->
+	<button onclick="goBack()">Back</button>
+
+</body>
+</html>

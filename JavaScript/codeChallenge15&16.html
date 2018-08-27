@@ -1,0 +1,30 @@
+<!-- Task 1: create a paragraph HTML element and change the text on click of a button.
+
+Task 2: Create a text input a label with default text and a button, the label text should change to text specified in the textbox when user clicks the button. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!-- Task1 -->
+	<p id="p1">This is the first paragraph.</p><br>
+	<button onclick=changeText()>Click me!</button><br>
+
+	<!-- Task2 -->
+	<label id="emailLabel">Email: </label>
+	<input id="input1" type = "text" name = "emailAddress" placeholder="Enter Your Email Address">
+	<button onclick=textChanged()>Click to Change.</button>
+
+	<script type="text/javascript">
+		function changeText(){
+			document.getElementById("p1").innerHTML = "This is the 1 paragraph."
+		}
+		function textChanged(){
+			var input = document.getElementById("input1").value
+			document.getElementById("emailLabel").innerHTML = input;
+		}
+	</script>
+</body>
+</html>

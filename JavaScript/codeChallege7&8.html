@@ -1,0 +1,32 @@
+<!-- Task 1:Create an object named person with attributes name, age , gender use if statement to check if the person is an adult and is a male. -->
+
+<!-- Task2: Lets assume you need to write simple js code to check if the product belongs to electronic category or has price greater than 100$, if so then you want to offer a 10% discount to the user. -->
+
+<!DOCTYPE html>
+<script type="text/javascript">
+	//Task1
+	var person = {name: "John", age: 50, gender: "Male"};
+	if(person.age >= 18 && person.gender == "Male"){
+		document.write("An adult male." + "<br>");
+	}
+	else{
+		document.write("Not an adult male." + "<br>")
+	}
+
+	//Task2
+	var product = {category : "Electronic", price : 150};
+	if(product.category == "Electronic" && product.price > 100){
+		document.write("Get an 10% discount on electronic product. Final price: "+ product.price*0.9 + "<br>");
+	}
+	else{
+		document.write("Not an electronic product, no discount." + "<br>")
+	}
+</script>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

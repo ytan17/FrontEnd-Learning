@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	// --------------------------Conditional Statement------------------------------<br>
+	// if-else<br>
+	if(condition){<br>
+		statement;<br>
+	}<br>
+	else{<br>
+		statement;<br>
+	}<br>
+	<br>
+	// --------------------------Comparision Operators------------------------------<br>
+	&&, ||, >, <, >=, <=, ==<br>
+	<br>
+	// --------------------------Loop------------------------------<br>
+	// for loop<br>
+	for(counter = 0; counter < 100; counter++){<br>
+		statement;<br>
+	}<br>
+	<br>
+	// while loop<br>
+	while(condition){<br>
+		stataement;<br>
+	}<br>
+	<br>
+	// switch case<br>
+	var grade = "G";<br>
+	switch(grade){<br>
+		case "A":<br>
+			document.write("Excellent");<br>
+			break;<br>
+		case "B:<br>
+			document.write("Good");<br>
+			break;<br>
+		case "C":<br>
+			document.write("Can do better");<br>
+			break;<br>
+		default:<br>
+			document.write("No grade");<br>
+	}<br>
+	<br>
+	<script type="text/javascript">
+	// --------------------------Regular expressions------------
+	// mainly used for searching a string
+	// -egg: searched string; -i: modifier
+	var pattern = /egg/i;
+	var x = "Where is the egg? Here is an egg, and I like egg."
+	var idx = x.search(pattern);
+	var replaceStr = x.replace(pattern,"water");
+	document.write("index of the matched first word: " + idx + "<br>");
+	document.write("replace the matched word with \"water\": " + replaceStr + "<br>");
+
+	document.write("<br>");
+	// --------------------------Exception Handling-------------
+	var x = 200;
+	var y = 0;
+	try{
+		if(y == 0){
+			throw("Divide by zero error."); // throw error
+		}else{
+			document.write(x + " / " + y + " = " + x/y + "<br>");
+		}
+	}catch(e){
+		alert("Error: " + e); // catch error and make an alert
+	}finally{
+		document.write("This will print out no matter what." + "<br>");
+	}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

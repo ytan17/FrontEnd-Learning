@@ -1,0 +1,34 @@
+<!-- Task 1: Consider the code var x = "10" var y=20, add the above two variables.
+Task 2: Declare an array of your 5 favorite fruits and list out the 2nd fruit in the array.
+Task 3: Add an additional fruit into the current list.
+Task 4: Remove the last element from the list. -->
+
+<!DOCTYPE html>
+<script type="text/javascript">
+	//Task1
+	var x = "10";
+	var y = 20;
+	var tot = parseInt(x) + y;
+	document.write("10 + 20 = " + tot + "<br>");
+
+	//Task2
+	fruit = ["apple", "banana", "kiwi", "watermelon", "melon"];
+	document.write(fruit[1] + "<br>");
+
+	//Task3
+	fruit.push("organ");
+	document.write("After add an additional fruit: " + fruit.toString() + "<br>");
+
+	//Task4
+	fruit.pop();
+	document.write("After remove the last element: " + fruit.toString() + "<br>");
+
+</script>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

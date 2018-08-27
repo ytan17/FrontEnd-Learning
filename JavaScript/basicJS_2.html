@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	// must initailize the value before using it.
+	x = 10;
+	document.write(x + "<br>");
+	// can declear the value type after using it, but it is not good.
+	var x;
+
+	// good practice
+	var y = 20;
+	document.write(y + "<br>");
+
+	//coding conventions - global varable's name with all upper case
+	var NUMBER = 10;
+
+	// Eample of automatic type conversion
+	var a = "apple";
+	a = 10;
+
+	// -------------------------------HTML DOM(Document Object model)----------------------
+	// understanding the DOM so that we could use javascript to manipulate the HTML page.
+	// Each tag will have its own id.
+</script>
+<head>
+	JavaScript coding best practice: <br>
+	Avoid global variables.<br>
+	Always declare local variables. <br>
+	Variable declarations should be on top. <br>
+	Initialize variables. <br>
+	Beware of automatic type conversion. <br>
+</head>
+<body>
+<!------using meaningful id and name ----->	
+	<div id="div1">
+	<p id="p1"> This is the first paragraph </p>
+	<p id="p2"> This is the second paragraph </p>
+	</div>
+
+	<!------ Events in DOM ----->
+	<!-- click on the heading, will have onclick action -->
+	<h1 onclick="this.innerHTML = 'You clicked the heading1.'">Click to change content.</h1>
+	<h1 onclick="this.style.color = 'Blue'">Click to change color.</h1>
+
+	<!------ Event listner ----->
+	<button id="btn1">Click!</button>
+	<button id="btn2" onclick=displayAlert()>Click Me!</button><br>
+
+	<script type="text/javascript">
+		document.write("<br>");
+		//------------------------introduce to BOM -----------------
+		// must put at the benginning of script. if not, will not display.
+		document.write("Screen's Width: " + screen.width + "<br>");
+
+		// getting access to webpage URL
+		document.write("file's URL: " + window.location.href + "<br>");
+		document.write("file's path: " + window.location.pathname + "<br>");
+		document.write("<br>");
+
+		//------make change on HTML tag's content by using javascripts------
+
+		// usually use id to get the element.
+		// innerHTML - make change on the content.
+		// ex1
+		document.getElementById("p1").innerHTML = "This is the 1 paragraph.";
+		// ex2
+		// get all the elements with matched tag, and use the index to find the matched element.
+		// index starts at 0.
+		document.getElementsByTagName("p")[1].innerHTML = "This is the 2 paragraph."
+
+		// -----make change on HTML tag's style by using javascripts-----
+		document.getElementById("p1").style.color = "Orange";
+
+		// Event listener
+		function displayAlert(){
+			alert("Button Clicked!");
+			document.getElementById("btn2").style.color = "Blue";
+		}
+		function displaytest(){
+			alert("Button Clicked??");
+		}
+		// "click" in addEventListener: this event listener which is added to this button is going to listen for button click.
+		document.getElementById("btn1").addEventListener("click",displayAlert);
+
+		//------------------introduction to nodes ----------------------------------
+
+		// output:This is the first paragraph
+		// there's no secondchild etc.
+		var node = document.getElementById("p1").firstChild.nodeValue; 
+		// output: P 
+		var node1 = document.getElementById("p1").nodeName;	
+		document.write(node + "<br>");	
+		document.write(node1 + "<br>");
+		// Add a new element on the nodes--------------------
+		// create a new <p> element
+		var para3 = document.createElement("p");
+		// create a new content
+		var text3 = document.createTextNode("This is the third paragraph.");
+		// append text node to p element
+		para3.appendChild(text3);
+		// get the root node(parent)
+		var parent = document.getElementById("div1");
+		// append the new node to the nodes
+		parent.appendChild(para3);
+
+		// insert new node before old nodes
+		var para0 = document.createElement("p");
+		var text0 = document.createTextNode("This is the initial paragraph.");
+		var para1 = document.getElementById("p1");
+		para0.appendChild(text0);
+		para0.style.color = "Red";
+		parent.insertBefore(para0,para1);
+
+		// replace child node
+		// replace the old node with another old node(node1), node1 will only show on the new position, and will not show on the original positon.
+		parent.replaceChild(para3,para0);
+		// remove child node
+		parent.removeChild(para0);
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- Task 1: Create an object named car, assign properties/attributes to it. In the JS code, try to change one of the attribute of the object
+
+Task 2: Write javascript code which displays Hi There on click of a button.
+
+Task 3: Create a car object with a property called state, create a button and use JS code to make the button change the state of the car. -->
+
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript">
+	//Task1
+	var car = {model : "Tokyo", color : "red", condition : "new", state : "IL"}
+	car.color = "black";
+	document.write(car.model + ", " + car.color + ", " + car.condition + "<br>");
+
+	//Task2
+	function greeting(){
+		document.write("Hi There.");
+	}
+
+	//Task3
+	document.write("Original State: " + car.state + "<br>");
+	function stateChange(){
+		car.state = "CA";
+		document.write("State Changed: " + car.state + "<br>")
+	}
+</script>
+<head> --------------- Here are heading section ---------------<br></head>
+<body>
+	--------------- Here are body section ---------------<br>
+	<button onclick="greeting()">Click me!</button>
+	<button onclick="stateChange()">Change Car State!</button>
+</body>
+</html>

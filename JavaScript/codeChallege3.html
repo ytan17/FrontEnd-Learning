@@ -1,0 +1,42 @@
+<!-- Task 1: Write JS code to display some message to the user, do this by using function.
+
+Task 2: Create a function which would accept a number and calculate its square.
+
+Task 3: create a function which would accept 3 numbers and would return the addition of all three of them. -->
+
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	// Task 1
+	function msgDisplay(){
+		document.write("Message Displayed." + "<br>");
+	}
+	msgDisplay();
+
+	//  with reurn //
+
+	// Task 2
+	// do not need to initialize the parameter value tyep
+	function square(number){
+		document.write("input: " + number);
+		number = number * number;
+		return number;
+	}
+	sqResult = square(5);
+	document.write(" && its square: " + sqResult + "<br>");
+
+	// Task 3
+	// num1, num2, num3 is local variable, can not use outside of addition func
+	function addition(num1, num2, num3){
+		document.write(num1 + " + " + num2 + " + " + num3 + " = ");
+		return num1 + num2 + num3
+	}
+	document.write(addition(1,2,3));
+
+</script>
+<head>
+</head>
+<body>
+
+</body>
+</html>
