@@ -1,0 +1,9 @@
+ - HTML is all about structure and content
+
+ - <div></div> is block level element. It is inline container.
+ 	<span></span> can group element together, and it is not a liner container.
+
+ MDN document reference: (in CSS-web developement folder)
+ - HTML element reference
+ - HTML attribute reference
+
