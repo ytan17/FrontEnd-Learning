@@ -1,0 +1,79 @@
+JavaScript Basic:
+-------------------------
+Hello World
+Multiple ways of displaying output
+Variables
+Operations
+Case sensitivity
+DataTypes
+
+Function:
+--------------------------
+Function
+Passing arguments to functions
+Objects
+Global and local variables
+Events
+
+Strings, Numbers & Arrays:
+----------------------------
+String length & escape characters
+
+String methods -- 
+output_index: .indexOf("str"), .search("str"), 
+output_string: .slice(6,12), substring(6,12), .substr(6,12)
+.replace("str","str1"), .toUpperCase()
+
+Numbermethods -- .toLowerCase(), .toString(), .parseInt("str"), .toFixed(#decimalPlace),
+Math Functions -- Math.round(num), Math.ceil(float), Math.floor(float), Math.pow(num,pow), Math.sqrt(num)
+
+Arrays
+
+Array methods -- .toString(), .pop(), .shift(), .unshift("str"), delete array[idx],
+.concat(array)
+
+Conditional Statement & Comparison Operators
+---------------------------------------------
+if conditional statements
+Comparision Operators
+AND & OR operators
+
+Looping & Switching
+-------------------------------
+For loop
+While Loop
+Switch case
+
+Regular Expressions & Exception Handing
+------------------------------------------
+Regular Expressions: .search(pattern), .replace(pattern,"str")
+Exception Handing
+
+Best Practicces & Coding Conventions
+--------------------------------------------
+Hoisting 
+JavaScript coding conventions
+JavaScript best practice
+
+HTML DOM
+---------------
+HTML DOM
+DOM methods: obj.innerHTML = "str", obj.style.color = "color"
+
+Accessing elements by tag name: .getElementById("id"), .getElementByTagName("p")[idx],
+
+changing styling for HTML tags
+
+Events in DOM: obj.addEventListener("str",function)
+
+introduction to nodes: objs.firstchild.nodeValue, objs.nodeName
+
+Adding HTML elements using nodes: .createElement("tag") --> .createTextNode("str") --> tagElement.appendChild(text), parent.inseartBefore(newNode,oldNode),
+parent.relaceChild(newNode,oldNode), 
+
+Deleting nodes: parent.removeChild(node)
+
+HTML BOM
+--------------------------
+Introduction to BOM: screen.width
+Getting access to webpage URL: window.location.href

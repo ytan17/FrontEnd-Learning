@@ -1,0 +1,16 @@
+Introduction to HTML:
+-------------------------------
+HTML Basics
+Introduction to MDN
+HTML Boilerplate and Comments
+Basic Tags
+HTML Lists
+HTML Lists Assignment
+Divs and Spans
+HTML Attributes
+Recreate Webpage Assignment
+
+Intermediate HTML:
+-------------------------------
+HTML Tables
+Tables Pokemon Exercisee

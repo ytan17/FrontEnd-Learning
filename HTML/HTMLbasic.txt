@@ -1,3 +1,4 @@
+ 
  - HTML is all about structure and content
 
  - <div></div> is block level element. It is inline container.
@@ -6,4 +7,31 @@
  MDN document reference: (in CSS-web developement folder)
  - HTML element reference
  - HTML attribute reference
+
+<form> tag - two attribute used:
+- action: where will the data send to
+- method: seding require - post/get
+
+<input> tag - type attribute:
+Attribute Values: 
+	button,
+	checkbox,
+	color,
+	date(no time), 
+	datetimelocal(time, but no timezone), 
+	email, 
+	file, 
+	hidden(Defines a hidden input field), 
+	image(Defines an image as the submit button), month(Defines a month and year control), number, 
+	password, 
+	radio, 
+	range, 
+	reset, 
+	search(Defines a text field for entering a search string), 
+	submit(Defines a submit button), 
+	tel(Defines a field for entering a telephone number),
+	text, 
+	time, 
+	url, 
+	week
 
