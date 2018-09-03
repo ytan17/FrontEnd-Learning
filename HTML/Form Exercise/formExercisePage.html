@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For Exercise</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form id="register">
+		<div>
+			<label for="firstName">First Name: </label>
+			<input id="firstName" type="text" name="fName" required>
+			<label for="lastName">Last Name: </label>
+			<input id="lastName" type="text" name="lName" required><br>
+		</div>
+
+		<div>
+			<label for="male">Male</label>
+			<input id="male" type="radio" name="gender" value="male">
+			<label for="female">Female</label>
+			<input id="female" type="radio" name="gender" value="female">
+			<label for="other">Other</label>
+			<input id="other" type="radio" name="gender" value="ohter"><br>
+		</div>
+
+		<div>
+			<label for="email">Email: </label>
+			<input id="email" type="email" name="email" required>
+			<label for="password">Password: </label>
+			<input id="pwd" type="password" name="password" pattern=".{5,8}" required title="Password must between 5 to 8 characters" placeholder= "Enter 5-8 characters">
+			<!--option2:
+			 <input id="pwd" type="password" name="password" minlength="5" maxlength="8" required placeholder="Enter 5-8 characters"><br> 
+			-->
+		</div>
+
+		<div>
+			<label for="birthday">Birthday: </label>
+			<!-- <input type="date" name="birthday"> -->
+			<select name="month">
+				<option selected="1">Month</option>
+				<option value="Jan">Jan</option>
+				<option value="Feb">Feb</option>
+				<option value="Mar">Mar</option>
+			</select>
+			<select name="day">
+				<option selected="1">Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+			<select name="year">
+				<option selected="1">Year</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>
+			</select>
+			<br>
+		</div>
+
+		<div>
+			<label for="agreement">I agree to the terms and conditions.</label>
+			<input id="agreement" type="checkbox" name="agreement"><br>
+		</div>
+
+		<button>Go!</button>
+	</form>
+</body>
+</html>
