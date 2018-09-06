@@ -13,4 +13,15 @@ Recreate Webpage Assignment
 Intermediate HTML:
 -------------------------------
 HTML Tables
-Tables Pokemon Exercisee
+Tables Pokemon Exercise
+Introduction to Forms
+Playing with inputs
+The Form Tag - <input>,<label>,<select>
+labels - attributes: for
+Form Validations - required
+Dropdowns and Radio Buttons
+	- dropdowns -- <select>, <option>
+	- radio buttons -- <input> -- attributes: id, type, name, value
+Form Exercise
+
+

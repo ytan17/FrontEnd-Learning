@@ -1,0 +1,11 @@
+Introduction to CSS
+------------------------
+Unit Objectives
+CSS Basics
+Our First Stylesheet
+	- in HTML file, link to CSS file: <link rel="stylesheet" type="text/css" href="fileName.css"> 
+CSS Colors
+	- built in Colors, Hexadecimal, RGB, RGBA
+Backgroud and Border
+	- Backgroud: backgroud-repeat:no repeat; backgroup-size:cover;
+	- Border: border:color,width,style;
