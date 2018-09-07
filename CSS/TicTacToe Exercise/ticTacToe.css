@@ -1,0 +1,19 @@
+h1{
+	text-align:center;
+	font-family: "Indie Flower"
+}
+tr th{
+	width: 100px;
+	height: 100px;
+}
+.middleV{
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+}
+.middleH th{
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+}
+table{
+	margin: auto;
+}
