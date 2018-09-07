@@ -8,4 +8,10 @@ CSS Colors
 	- built in Colors, Hexadecimal, RGB, RGBA
 Backgroud and Border
 	- Backgroud: backgroud-repeat:no repeat; backgroup-size:cover;
-	- Border: border:color,width,style;
+	- Border: border:width color style;
+Selectors Basics Todo List
+Introduction to Chrome Inspector
+More advanced Selectors
+specificity and the Cascade
+Selectors Practice Exercise
+
