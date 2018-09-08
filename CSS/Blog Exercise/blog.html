@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Blog</title>
+</head>
+<body>
+	<div>
+		<h2 id="date"></h2>
+		<h1>Visit Beijing part 1</h1>
+		<h3>Best Time To Visit</h3>
+		<p>The best times to visit Beijing are autumn and late spring, which bring clear skies, mild temperatures, and resplendent flora. Crowds are thick during the October holidays (October 1 through 7) and Spring Festival (late January to mid-February, depending on the lunar calendar).</p>
+		<h3>Beijing Transportation</h3>
+		<P>The subway is the cheapest way to get around (a one-way trip starts at about $0.30). Taxis are plentiful and cheap, though cycling is arguably the best way to see the city, especially if you’re staying in an area with many hutongs.</P>
+		<h3>Beijing Weather</h3>
+		<p>July is the hottest month, with an average high of 81°F (27°C), and January is the coldest, with an average high of 25°F (-4°C).</p>
+	</div>
+
+	<div></div>
+
+	<script type="text/javascript">
+		var date = new Date();
+		var day = date.getUTCDate();
+		var month = date.getUTCMonth() + 1;
+		var year = date.getUTCFullYear();
+		function pad(num){
+			return (num < 10 ? '0' : '') + num;
+		}
+		document.getElementById("date").innerHTML = pad(month) + "/" + pad(day) + "/" + year;
+	</script>
+</body>
+</html>
