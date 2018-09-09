@@ -2,22 +2,37 @@
 <html>
 <head>
 	<title>My Blog</title>
+	<link rel="stylesheet" type="text/css" href="blog.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 </head>
 <body>
 	<div>
-		<h2 id="date"></h2>
-		<h1>Visit Beijing part 1</h1>
-		<h3>Best Time To Visit</h3>
+		<h3 class="date">November 23, 2015</h3>
+		<h2>Visit Beijing part 1</h2>
+		<h4>Best Time To Visit</h4>
 		<p>The best times to visit Beijing are autumn and late spring, which bring clear skies, mild temperatures, and resplendent flora. Crowds are thick during the October holidays (October 1 through 7) and Spring Festival (late January to mid-February, depending on the lunar calendar).</p>
-		<h3>Beijing Transportation</h3>
+		<h4>Beijing Transportation</h4>
 		<P>The subway is the cheapest way to get around (a one-way trip starts at about $0.30). Taxis are plentiful and cheap, though cycling is arguably the best way to see the city, especially if you’re staying in an area with many hutongs.</P>
-		<h3>Beijing Weather</h3>
+		<h4>Beijing Weather</h4>
 		<p>July is the hottest month, with an average high of 81°F (27°C), and January is the coldest, with an average high of 25°F (-4°C).</p>
 	</div>
+	<hr>
+	<div>
+		<h3 class="date">December 11, 2015</h3>
+		<h2>Visit Beijing part 2</h2>
+		<h4>Where to Eat</h4>
+		<p>Restaurant food tends to be relatively inexpensive here, so you can afford to splurge a bit. For years, restaurants tended to be rather bland and lacking in creativity. But China's more moderate privatization policies in recent years have resulted in a bright new selection of eateries. If you decide not to eat in a restaurant, be sure you stick with hot meals and well-cooked entrees. Avoid raw vegetables and water that isn't bottled. In fact, if you buy bottled water from a street vendor, be certain the seal is unbroken.</p>
+		<p>Some have made an industry of retrieving discarded water bottles from trash cans, refilling them from a tap and reselling them.</p>
+		<h4>Where to Stay</h4>
+		<p>Beijing added hotel beds to accommodate the rush of visitors the city expected for the Olympic Games. This works to a budget traveler's advantage because Beijing needed more mid-priced hotel rooms (what city doesn't?) to offset the low-cost guest houses and the opulent grand hotels. A Beijing search on Airbnb.com will show you plenty of places to stay for $50/night or less. Hostels.com shows several properties in the city, at prices ranging from $8-$59 USD/night.</p>
+		<h4>Getting Around</h4>
+		<p>Mass transportation can be challenging in Beijing, but budget travelers often find it's worth the effort to learn about the Beijing subway system and avoid taxi drivers in Beijing, who have a somewhat deserved reputation for taking advantage of tourists. Subway fares are based on a zone system similar to London. Although it has been around since 1969, much of the system is new, and the government has ambitious expansion plans for the next few years.</p>
+		<p>If your trip involves times and destinations that make a cab more practical, be assured you'll also find many drivers who are friendly and honest with fares. It pays to have someone write down your destination in Chinese characters on the back of your hotel's business card. At day's end, use the front of the card to help another cab driver get you back to home base.</p>
+	</div>
+	<hr>
 
-	<div></div>
-
-	<script type="text/javascript">
+	<!-- get today's date -->
+	<!-- <script type="text/javascript">
 		var date = new Date();
 		var day = date.getUTCDate();
 		var month = date.getUTCMonth() + 1;
@@ -26,6 +41,6 @@
 			return (num < 10 ? '0' : '') + num;
 		}
 		document.getElementById("date").innerHTML = pad(month) + "/" + pad(day) + "/" + year;
-	</script>
+	</script> -->
 </body>
 </html>
