@@ -1,3 +1,4 @@
+/*navbar*/
 nav{
 	font-family: Merriweather;
 }
@@ -17,4 +18,9 @@ nav{
 }
 .user{
 	color: white;
+}
+
+/*main section*/
+body{
+	background: url(https://g5-assets-cld-res.cloudinary.com/image/upload/q_auto,f_auto,fl_lossy/g5/g5-c-ih2kijjv-national-veterinary-associates-client/g5-cl-572somaiy-sacajawea-healthcare-for-pets/uploads/man-with-his-dog-full-hero.jpg);
 }
